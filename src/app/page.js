@@ -17,13 +17,13 @@ import {
 export default function Home() {
   return (
     <div className="flex min-h-screen">
-      {/* Main Content */}
+      {/* Основное содержимое */}
       <main className="flex-1 flex flex-col overflow-y-auto">
-        {/* TopNavBar */}
+        {/* Верхняя панель навигации */}
         <header className="flex items-center justify-between sticky top-0 bg-background-light/80 backdrop-blur-sm z-10 border-b border-gray-200 px-6 h-16 py-6">
           <div className="flex items-center gap-8">
             <h2 className="text-xl font-bold text-gray-900">
-              Dashboard
+              Панель управления
             </h2>
           </div>
           <div className="flex flex-1 justify-end items-center gap-4">
@@ -33,7 +33,7 @@ export default function Home() {
               </span>
               <input
                 className="w-full pl-10 pr-4 py-2 rounded-lg bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-                placeholder="Search..."
+                placeholder="Поиск..."
                 type="search"
               />
             </label>
@@ -50,7 +50,7 @@ export default function Home() {
             </button>
             <div
               className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              data-alt="User avatar"
+              data-alt="Аватар пользователя"
               style={{
                 backgroundImage:
                   'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsEho40RnWTUmu6pMpO6DupWNxMrym5DKo3g419KmhNAQtLqJ7aFyhYI_4CcOeoVvnXcKaWCqxr29_48-lyDS709-XESoSTX8_sEwHCHetkO83508qKQ3Eeddrs6ZtRo56WBE27GhmCjL12wLoj-bPyAncFq1qKHPQpuKk8t0EJgEHUVmvYwQ9QEQDqLmTIqy4A-nJhAt9anBuppvkOwtCWGPmQJmiwX7wtc8VdvEKz-qpzI64daOgb82to3Um69z_wCzAYwgynvQ")',
@@ -58,27 +58,27 @@ export default function Home() {
             />
           </div>
         </header>
-        {/* Page Content */}
+        {/* Контент страницы */}
         <div className="p-6 space-y-6">
-          {/* Breadcrumbs */}
+          {/* Хлебные крошки */}
           <div className="flex items-center gap-2">
             <a
               className="text-gray-500 hover:text-primary text-sm font-medium"
               href="#"
             >
-              Home
+              Главная
             </a>
             <span className="text-gray-400 text-sm">/</span>
             <span className="text-gray-800 text-sm font-medium">
-              Dashboard
+              Панель управления
             </span>
           </div>
-          {/* Stats */}
+          {/* Статистика */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="flex flex-col gap-2 rounded-xl p-6 bg-white border border-gray-200">
               <div className="flex items-center justify-between">
                 <p className="text-gray-600 text-sm font-medium">
-                  Total Users
+                  Всего пользователей
                 </p>
                 <div className="p-2 bg-primary/20 rounded-lg">
                   <Users className="text-primary" size={20} strokeWidth={2} />
@@ -95,7 +95,7 @@ export default function Home() {
             <div className="flex flex-col gap-2 rounded-xl p-6 bg-white border border-gray-200">
               <div className="flex items-center justify-between">
                 <p className="text-gray-600 text-sm font-medium">
-                  New Signups
+                  Новые регистрации
                 </p>
                 <div className="p-2 bg-primary/20 rounded-lg">
                   <UserPlus className="text-primary" size={20} strokeWidth={2} />
@@ -112,7 +112,7 @@ export default function Home() {
             <div className="flex flex-col gap-2 rounded-xl p-6 bg-white border border-gray-200">
               <div className="flex items-center justify-between">
                 <p className="text-gray-600 text-sm font-medium">
-                  Revenue
+                  Доход
                 </p>
                 <div className="p-2 bg-primary/20 rounded-lg">
                   <DollarSign className="text-primary" size={20} strokeWidth={2} />
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="flex flex-col gap-2 rounded-xl p-6 bg-white border border-gray-200">
               <div className="flex items-center justify-between">
                 <p className="text-gray-600 text-sm font-medium">
-                  Active Now
+                  Сейчас активно
                 </p>
                 <div className="p-2 bg-primary/20 rounded-lg">
                   <Monitor className="text-primary" size={20} strokeWidth={2} />
@@ -140,15 +140,15 @@ export default function Home() {
               </p>
               <p className="text-gray-500 text-sm font-medium flex items-center gap-1">
                 <Clock size={16} className="" />
-                Real-time
+                В реальном времени
               </p>
             </div>
           </div>
-          {/* Charts */}
+          {/* Графики */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2 flex flex-col gap-4 rounded-xl border border-gray-200 p-6 bg-white">
               <p className="text-gray-900 text-lg font-semibold">
-                User Growth Over Time
+                Рост пользователей со временем
               </p>
               <div className="flex min-h-[300px] flex-1 flex-col gap-8 py-4">
                 <svg
@@ -205,29 +205,29 @@ export default function Home() {
                 </svg>
                 <div className="flex justify-around">
                   <p className="text-gray-500 text-xs font-bold tracking-wide">
-                    JAN
+                    ЯНВ
                   </p>
                   <p className="text-gray-500 text-xs font-bold tracking-wide">
-                    FEB
+                    ФЕВ
                   </p>
                   <p className="text-gray-500 text-xs font-bold tracking-wide">
-                    MAR
+                    МАРТ
                   </p>
                   <p className="text-gray-500 text-xs font-bold tracking-wide">
-                    APR
+                    АПР
                   </p>
                   <p className="text-gray-500 text-xs font-bold tracking-wide">
-                    MAY
+                    МАЙ
                   </p>
                   <p className="text-gray-500 text-xs font-bold tracking-wide">
-                    JUN
+                    ИЮНЬ
                   </p>
                 </div>
               </div>
             </div>
             <div className="flex flex-col gap-4 rounded-xl border border-gray-200 p-6 bg-white">
               <p className="text-gray-900 text-lg font-semibold">
-                User Demographics
+                Демография пользователей
               </p>
               <div className="flex-1 flex items-center justify-center min-h-[300px]">
                 <div className="relative w-48 h-48">
@@ -267,41 +267,41 @@ export default function Home() {
                   </svg>
                   <div className="absolute inset-0 flex flex-col items-center justify-center">
                     <span className="text-2xl font-bold text-gray-900">
-                      12k
+                      12к
                     </span>
-                    <span className="text-xs text-gray-500">Total Users</span>
+                    <span className="text-xs text-gray-500">Всего пользователей</span>
                   </div>
                 </div>
               </div>
               <div className="flex justify-center gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-primary" />
-                  <span>USA (60%)</span>
+                  <span>США (60%)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-green-400" />
-                  <span>EU (25%)</span>
+                  <span>ЕС (25%)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-orange-400" />
-                  <span>Other (15%)</span>
+                  <span>Другое (15%)</span>
                 </div>
               </div>
             </div>
           </div>
-          {/* Data Table */}
+          {/* Таблица данных */}
           <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
             <div className="p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-gray-200">
               <h3 className="text-lg font-semibold text-gray-900">
-                Recent Users
+                Последние пользователи
               </h3>
               <div className="flex items-center gap-2">
                 <button className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50">
-                  <Download size={16} /> Export
+                  <Download size={16} /> Экспорт
                 </button>
                 <button className="flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-primary rounded-lg hover:bg-primary/90">
                   <Plus size={16} />
-                  Add User
+                  Добавить пользователя
                 </button>
               </div>
             </div>
@@ -316,19 +316,19 @@ export default function Home() {
                       />
                     </th>
                     <th className="px-6 py-3" scope="col">
-                      Name
+                      Имя
                     </th>
                     <th className="px-6 py-3" scope="col">
-                      Role
+                      Роль
                     </th>
                     <th className="px-6 py-3" scope="col">
-                      Status
+                      Статус
                     </th>
                     <th className="px-6 py-3" scope="col">
-                      Date Joined
+                      Дата регистрации
                     </th>
                     <th className="px-6 py-3" scope="col">
-                      <span className="sr-only">Actions</span>
+                      <span className="sr-only">Действия</span>
                     </th>
                   </tr>
                 </thead>
@@ -348,29 +348,29 @@ export default function Home() {
                         width={40}
                         height={40}
                         className="rounded-full"
-                        alt="User avatar"
+                        alt="Аватар пользователя"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH75X0aWUtJR-B5XE9BNSBtJqS24dnQnTSSVDUSwLSbeSyW3r0f-kj9ZYTcnFWRsHD8XkiVblfrxt_NiM0LY2XoCsCr1sZqeeavXHW6w54Y5FwdEDav6iUJHEBOQ_xVDgUMgV5is_QsRV2UNt9JvU3hDhPCocglWr2Yx7fAATa0Tnh3aqkcGMqC0ikRWf94IRHcV8LpAOxZyafyC8Lh-7oNliqczZinWXb1UqbRz5TBKxGyojxN4kHVKBJ5f6fcxluAOxxEgclvfE"
                       />
                       <div className="pl-3">
-                        <div className="text-base font-semibold">Neil Sims</div>
+                        <div className="text-base font-semibold">Нил Симс</div>
                         <div className="font-normal text-gray-500">
                           neil.sims@example.com
                         </div>
                       </div>
                     </th>
-                    <td className="px-6 py-4">Administrator</td>
+                    <td className="px-6 py-4">Администратор</td>
                     <td className="px-6 py-4">
                       <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                        Active
+                        Активен
                       </span>
                     </td>
                     <td className="px-6 py-4">2023-08-15</td>
                     <td className="px-6 py-4 text-right">
                       <button className="font-medium text-primary hover:underline">
-                        Edit
+                        Изменить
                       </button>
                       <button className="font-medium text-red-500 hover:underline ml-4">
-                        Delete
+                        Удалить
                       </button>
                     </td>
                   </tr>
@@ -389,29 +389,29 @@ export default function Home() {
                         width={40}
                         height={40}
                         className="rounded-full"
-                        alt="User avatar"
+                        alt="Аватар пользователя"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFSp-rS2QoZoOZfyku2NXr4Arrott-BaGjGizY2PYWr14nsNWEI2IQMncBZJqeAF8Wn7Wro2RHwRFFXhcAc6CFIaSBQQxEnb5ejD1AkVl80n5WWneRNKrzS_YubEC-7LJWj27rcB1WKgNjQfu5Xhvz0eBPmpf-0EYn7133GWSWltGAHtirK-ar9deXkRyxpHP3NLsO_uhq4KVFwi6qk3QGRJ0vAbtARZCxqKRLBsIj-SQw1OE5KdKSGnxegC75eQLQH6QOwsZJDjE"
                       />
                       <div className="pl-3">
-                        <div className="text-base font-semibold">John Doe</div>
+                        <div className="text-base font-semibold">Джон Доу</div>
                         <div className="font-normal text-gray-500">
                           john.doe@example.com
                         </div>
                       </div>
                     </th>
-                    <td className="px-6 py-4">Editor</td>
+                    <td className="px-6 py-4">Редактор</td>
                     <td className="px-6 py-4">
                       <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                        Active
+                        Активен
                       </span>
                     </td>
                     <td className="px-6 py-4">2023-07-21</td>
                     <td className="px-6 py-4 text-right">
                       <button className="font-medium text-primary hover:underline">
-                        Edit
+                        Изменить
                       </button>
                       <button className="font-medium text-red-500 hover:underline ml-4">
-                        Delete
+                        Удалить
                       </button>
                     </td>
                   </tr>
@@ -430,31 +430,31 @@ export default function Home() {
                         width={40}
                         height={40}
                         className="rounded-full"
-                        alt="User avatar"
+                        alt="Аватар пользователя"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgJhf9Y-ILHOmifN62BsrbZHHkfKxmoAJK1jjvaxNI9LMW85C4E1RjGNiYytwUgppKhCObo29uAlP0T3zjNITOebxoGZtvytpTw6z5kUdl7Vo7JnlMHS0P3BNAK9wx11LmOZQEWuZF33qJ8kIHcuL9kyeWoBGT4L8qNj8PO-6T6RrapFvlos2CCMH-tfZgRFVtKSgrxAr--JIM0k_hjAB5wPbvBK6Z4PvhPRdOVUwRRsObnBkZfzs7q2uvIJuPM1Cpbob70BmP9mw"
                       />
                       <div className="pl-3">
                         <div className="text-base font-semibold">
-                          Jane Smith
+                          Джейн Смит
                         </div>
                         <div className="font-normal text-gray-500">
                           jane.smith@example.com
                         </div>
                       </div>
                     </th>
-                    <td className="px-6 py-4">Viewer</td>
+                    <td className="px-6 py-4">Просмотр</td>
                     <td className="px-6 py-4">
                       <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
-                        Inactive
+                        Неактивен
                       </span>
                     </td>
                     <td className="px-6 py-4">2023-06-01</td>
                     <td className="px-6 py-4 text-right">
                       <button className="font-medium text-primary hover:underline">
-                        Edit
+                        Изменить
                       </button>
                       <button className="font-medium text-red-500 hover:underline ml-4">
-                        Delete
+                        Удалить
                       </button>
                     </td>
                   </tr>
@@ -463,11 +463,11 @@ export default function Home() {
             </div>
             <div className="p-4 flex items-center justify-between">
               <span className="text-sm text-gray-700">
-                Showing{" "}
+                Показаны{" "}
                 <span className="font-semibold text-gray-900">
                   1-3
                 </span>{" "}
-                of{" "}
+                из{" "}
                 <span className="font-semibold text-gray-900">
                   100
                 </span>
@@ -477,13 +477,13 @@ export default function Home() {
                   className="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700"
                   href="#"
                 >
-                  Previous
+                  Предыдущая
                 </a>
                 <a
                   className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
                   href="#"
                 >
-                  Next
+                  Следующая
                 </a>
               </div>
             </div>
